@@ -1,3 +1,96 @@
+@use "./colors" as *;
+@use "./components" as *;
+@use "./min" as *;
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
 html {
-    font-size: 62.5%;
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	// background-color: rgb(183, 185, 185);
+	font-family: "Lato", sans-serif;
+	font-size: 1.6rem;
+	// font-family: "Poppins", sans-serif;
+}
+
+.nav {
+	&__items {
+		// background: yellow;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__link,
+	&__btn {
+		text-decoration: none;
+		margin: 0 1rem;
+		color: black;
+	}
+
+	&__logo {
+		padding: 1rem;
+        margin-left: 2rem;
+	}
+
+	&__btn--regexbrew {
+		background-color: $amarant;
+		color: rgb(255, 255, 255);
+		padding: 1rem 2rem;
+		transition: background-color 0.3s;
+		border-radius: 1rem;
+
+		&:hover {
+			background-color: $amarant-hover;
+		}
+	}
+
+	&__btn--login {
+		background-color: $blue;
+		color: rgb(255, 255, 255);
+		padding: 1rem 3.5rem;
+		margin-left: -0.4rem;
+        margin-right: 3rem;
+		transition: background-color 0.3s;
+		border-radius: 1rem;
+
+		&:hover {
+			background-color: $blue-hover;
+		}
+	}
+
+	&__bars {
+		padding: 1rem 1.5rem;
+        margin-right: 2rem;
+		font-size: 3rem;
+		background: none;
+		border: none;
+		cursor: pointer;
+		transition: color 0.3s;
+
+		&:hover {
+			color: $blue;
+		}
+	}
+
+	&__links {
+		display: none;
+	}
+}
+
+@media (min-width: 992px) {
+	.nav__bars {
+		display: none;
+	}
+	.nav__links {
+		display: block;
+	}
 }

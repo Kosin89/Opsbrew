@@ -1,3 +1,94 @@
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+}
+
+.nav__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.nav__link, .nav__btn {
+  text-decoration: none;
+  margin: 0 1rem;
+  color: black;
+}
+.nav__logo {
+  padding: 1rem;
+  margin-left: 2rem;
+}
+.nav__btn--regexbrew {
+  background-color: #DD3665;
+  color: rgb(255, 255, 255);
+  padding: 1rem 2rem;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  border-radius: 1rem;
+}
+.nav__btn--regexbrew:hover {
+  background-color: #E45E84;
+}
+.nav__btn--login {
+  background-color: #0F4ECA;
+  color: rgb(255, 255, 255);
+  padding: 1rem 3.5rem;
+  margin-left: -0.4rem;
+  margin-right: 3rem;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  border-radius: 1rem;
+}
+.nav__btn--login:hover {
+  background-color: #3F71D5;
+}
+.nav__bars {
+  padding: 1rem 1.5rem;
+  margin-right: 2rem;
+  font-size: 3rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.nav__bars:hover {
+  color: #0F4ECA;
+}
+.nav__links {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .nav__bars {
+    display: none;
+  }
+  .nav__links {
+    display: block;
+  }
 }/*# sourceMappingURL=main.css.map */
