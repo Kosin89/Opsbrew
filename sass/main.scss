@@ -34,7 +34,7 @@ body {
 		height: 4rem;
 		width: 15rem;
 		background-size: 100%;
-        background-repeat: no-repeat;
+		background-repeat: no-repeat;
 		margin-left: 1rem;
 	}
 
@@ -90,7 +90,7 @@ body {
 }
 
 .hero {
-	background-color: #f6f7fc;    
+	background-color: #f6f7fc;
 
 	&__body {
 		max-width: 50rem;
@@ -104,8 +104,8 @@ body {
 		font-size: 2.2rem;
 		font-weight: bold;
 		line-height: 4.4rem;
-        letter-spacing: 0.1rem;
-        font-family: "Poppins", sans-serif;
+		letter-spacing: 0.1rem;
+		font-family: "Poppins", sans-serif;
 	}
 
 	&__btns {
@@ -120,7 +120,7 @@ body {
 			background-color: $blue;
 			color: $white;
 			margin-right: 0.5rem;
-            transition: background-color 0.3s;
+			transition: background-color 0.3s;
 
 			&:hover {
 				background-color: $blue-hover;
@@ -132,7 +132,7 @@ body {
 			color: $blue;
 			border: 1px solid $blue;
 			margin-left: 0.5rem;
-            transition: background-color 0.3s, color 0.3s;
+			transition: background-color 0.3s, color 0.3s;
 
 			&:hover {
 				background-color: $blue-hover;
@@ -150,46 +150,66 @@ body {
 		background-repeat: no-repeat;
 	}
 
-    &__below {
-        background-color: $blue;
-        height: 600px;
-    }
+	&__below {
+		background-color: $blue;
+		padding-bottom: 4rem;
 
-    &__below-logo-box {
-        // background-color: yellow;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 5rem 0;
+		&-logo {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 5rem 0;
 
-        &--logo {
-            height: 80px;
-            width: 80px;
-        }
-    }
+			&-img {
+				height: 8rem;
+				width: 8rem;
+			}
+		}
+	}
 
-  
+	&__below-box-text {
+		padding: 0 1rem 0 2.6rem;
+		color: $white;
+
+		&-heading {
+			font-weight: bold;
+			margin-bottom: 4rem;
+		}
+
+		&-list li {
+			margin: 2rem 0;
+		}
+	}
 }
 
 // MEDIA
 
 @media (min-width: 576px) {
 	.hero {
-
 		&__text {
-			font-size: 2.4rem;
+			font-size: 2.4rrem;
 		}
 
 		&__img {
-			width: 350px;
-			height: 350px;
+			width: 35rem;
+			height: 35rem;
+		}
+
+		&__below {
+			&-logo-img {
+				height: 10rem;
+				width: 10rem;
+			}
+
+			&-box-text {
+				padding-left: 4rem;
+			}
 		}
 	}
 }
 
 @media (min-width: 768px) {
-    .hero {
-
+	.hero {
 		&__text {
 			font-size: 2.6rem;
 		}
@@ -198,12 +218,19 @@ body {
 			width: 400px;
 			height: 400px;
 		}
+
+		&__below {
+
+			&-logo-img {
+				height: 12rem;
+				width: 12rem;
+			}
+		}
 	}
 }
 
 @media (min-width: 992px) {
 	.nav {
-
 		&__bars {
 			display: none;
 		}
@@ -213,59 +240,63 @@ body {
 		}
 	}
 
-    .hero {       
-        &__card {
-            // background-color: red;
-            max-width: 45rem;
-            text-align: left;
-            padding-bottom: 4rem;
-            
-        }
+	.hero {
+		&__card {
+			max-width: 45rem;
+			text-align: left;
+			padding-bottom: 4rem;			
+		}
 
-        &__info {
-            display: flex;        
-            justify-content: space-evenly;
-            align-items: center;
-            padding: 0;
-        }
-        &__body {
-            max-width: none;
-            padding-top: 0;    
-            margin: auto;        
-        }
+		&__info {
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			padding: 0;
+		}
+		&__body {
+			max-width: none;
+			padding-top: 0;
+			margin: auto;
+		}
 
-        &__img {
-            background-position: center;
-            background-size: 100%;
-            background-repeat: no-repeat;
-            margin: 0;
-            width: 500px;
+		&__img {
+			background-position: center;
+			background-size: 100%;
+			background-repeat: no-repeat;
+			margin: 0;
+			width: 500px;
 			height: 500px;
-            background-image: url(../img/topimageX.png);
-            
-        }
+			background-image: url(../img/topimageX.png);
+		}
 
-        &__text {
-            font-size: 2.8rem;
-        }
+		&__text {
+			font-size: 2.8rem;
+		}
 
-    }
+		&__below-box {			
+			display: flex;
+			justify-content: space-evenly;
+			padding: 10rem 0 5rem 0;
+		}
+
+		&__below-logo {			
+			padding: 0 3em;
+		}
+	}
 }
 
 @media (min-width: 1200px) {
-    .hero {
-        &__info {      
-            justify-content: space-around;
-            
-        }
-        &__img {            
-            width: 600px;
+	.hero {
+		&__info {
+			justify-content: space-around;
+		}
+		&__img {
+			width: 600px;
 			height: 600px;
-            
-        }
+		}
 
-        &__text {
-            font-size: 3.2rem;
-        }
-    }
+		&__text {
+			font-size: 3.2rem;
+		}
+	}
 }
