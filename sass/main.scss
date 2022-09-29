@@ -30,10 +30,11 @@ body {
 	}
 
 	&__logo {
-		background-image: url(../img/opsbrewS.png);
+		background-image: url(../img/opsbrewX.png);
 		height: 4rem;
 		width: 15rem;
-		background-size: cover;
+		background-size: 100%;
+        background-repeat: no-repeat;
 		margin-left: 1rem;
 	}
 
@@ -88,15 +89,14 @@ body {
 	}
 }
 
-.top {
-	// background-color: #f6f7fc;
-    background-color: yellow;
+.hero {
+	background-color: #f6f7fc;    
 
 	&__body {
 		max-width: 50rem;
 		padding-top: 6rem;
 		text-align: center;
-		margin: auto;
+		margin: auto auto -6rem;
 	}
 
 	&__text {
@@ -104,7 +104,8 @@ body {
 		font-size: 2.2rem;
 		font-weight: bold;
 		line-height: 4.4rem;
-        // background-color: blue;
+        letter-spacing: 0.1rem;
+        font-family: "Poppins", sans-serif;
 	}
 
 	&__btns {
@@ -119,6 +120,7 @@ body {
 			background-color: $blue;
 			color: $white;
 			margin-right: 0.5rem;
+            transition: background-color 0.3s;
 
 			&:hover {
 				background-color: $blue-hover;
@@ -130,6 +132,7 @@ body {
 			color: $blue;
 			border: 1px solid $blue;
 			margin-left: 0.5rem;
+            transition: background-color 0.3s, color 0.3s;
 
 			&:hover {
 				background-color: $blue-hover;
@@ -141,17 +144,37 @@ body {
 	&__img {
 		margin: 5rem auto 0;
 		background-image: url(../img/topimageS.png);
-		width: 300px;
-		height: 300px;
+		width: 30rem;
+		height: 30rem;
 		background-size: 100%;
 		background-repeat: no-repeat;
 	}
+
+    &__below {
+        background-color: $blue;
+        height: 600px;
+    }
+
+    &__below-logo-box {
+        // background-color: yellow;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5rem 0;
+
+        &--logo {
+            height: 80px;
+            width: 80px;
+        }
+    }
+
+  
 }
 
 // MEDIA
 
 @media (min-width: 576px) {
-	.top {
+	.hero {
 
 		&__text {
 			font-size: 2.4rem;
@@ -165,7 +188,7 @@ body {
 }
 
 @media (min-width: 768px) {
-    .top {
+    .hero {
 
 		&__text {
 			font-size: 2.6rem;
@@ -190,27 +213,59 @@ body {
 		}
 	}
 
-    .top {
-        
-
+    .hero {       
         &__card {
-            background-color: red;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            // background-color: red;
+            max-width: 45rem;
+            text-align: left;
+            padding-bottom: 4rem;
+            
         }
 
         &__info {
-            display: flex;
-            background-color: aqua;
-            justify-content: center;
+            display: flex;        
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 0;
         }
         &__body {
             max-width: none;
+            padding-top: 0;    
+            margin: auto;        
+        }
+
+        &__img {
+            background-position: center;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            margin: 0;
+            width: 500px;
+			height: 500px;
+            background-image: url(../img/topimageX.png);
+            
+        }
+
+        &__text {
+            font-size: 2.8rem;
         }
 
     }
 }
 
 @media (min-width: 1200px) {
+    .hero {
+        &__info {      
+            justify-content: space-around;
+            
+        }
+        &__img {            
+            width: 600px;
+			height: 600px;
+            
+        }
+
+        &__text {
+            font-size: 3.2rem;
+        }
+    }
 }
