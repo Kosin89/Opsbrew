@@ -111,7 +111,7 @@ body {
 
 .hero {
 	background-color: #f6f7fc;
-	// display: none;
+	display: none;
 
 	&__body {
 		max-width: 50rem;
@@ -204,7 +204,7 @@ body {
 }
 
 .key {
-	// display: none;
+	display: none;
 	padding-bottom: 5rem;
 
 	&__heading {
@@ -245,6 +245,7 @@ body {
 }
 
 .info {
+	display: none;
 	background-color: #f3f5fb;
 	padding-bottom: 5rem;
 
@@ -309,6 +310,42 @@ body {
 	}
 }
 
+.advanced {
+	// display: none;
+	padding: 4rem 2rem;
+	background-color: #f2f2f2;
+
+	&__cards {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__card {
+		margin: 2rem 0;
+		padding: 1rem 0;
+		max-width: 400px;
+
+		&--three {
+			margin-bottom: 0;
+		}
+	}
+
+	&__main-text {
+		font-family: "Poppins", sans-serif;
+		font-size: 2rem;
+		font-weight: bold;
+		margin: 3rem 0;
+		text-align: center;
+	}
+
+	&__heading-text {
+		font-size: 1.8rem;
+		font-weight: bold;
+		padding: 1rem 0;
+	}
+}
+
 // MEDIA
 
 @media (min-width: 576px) {
@@ -345,6 +382,12 @@ body {
 			margin: 0 auto;
 		}
 	}
+
+	.advanced {
+		&__main-text {
+			font-size: 2.2rem;
+		}
+	}
 }
 
 @media (min-width: 768px) {
@@ -366,6 +409,12 @@ body {
 				height: 12rem;
 				width: 12rem;
 			}
+		}
+	}
+
+	.advanced {
+		&__main-text {
+			font-size: 2.4rem;
 		}
 	}
 }
@@ -473,12 +522,11 @@ body {
 	}
 
 	.info {
-		
 		&__body {
 			display: flex;
 			padding-top: 5rem;
 		}
-		&__heading {	
+		&__heading {
 			max-width: 60rem;
 			text-align: left;
 		}
@@ -494,6 +542,32 @@ body {
 
 		&__card {
 			margin: 30px;
+		}
+	}
+
+	.advanced {
+		&__card {
+			max-width: 29rem;
+			margin: 20px;
+
+			&--one {
+				margin-left: 0;
+			}
+
+			&--three {
+				margin-right: 0;
+			}
+		}
+		&__first-box {
+			display: flex;
+		}
+
+		&__second-box {
+			display: flex;
+		}
+
+		&__main-text {
+			font-size: 2.4rem;
 		}
 	}
 }
@@ -514,6 +588,16 @@ body {
 
 		&__text {
 			font-size: 3.2rem;
+		}
+	}
+
+	.advanced {
+		&__card {
+			max-width: 36rem;
+		}
+
+		&__main-text {
+			font-size: 2.6rem;
 		}
 	}
 }

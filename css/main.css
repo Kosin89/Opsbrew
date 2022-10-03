@@ -115,6 +115,7 @@ body {
 
 .hero {
   background-color: #f6f7fc;
+  display: none;
 }
 .hero__body {
   max-width: 50rem;
@@ -201,6 +202,7 @@ body {
 }
 
 .key {
+  display: none;
   padding-bottom: 5rem;
 }
 .key__heading {
@@ -244,6 +246,7 @@ body {
 }
 
 .info {
+  display: none;
   background-color: #f3f5fb;
   padding-bottom: 5rem;
 }
@@ -298,6 +301,43 @@ body {
   background-color: #f3af3a;
 }
 
+.advanced {
+  padding: 4rem 2rem;
+  background-color: #f2f2f2;
+}
+.advanced__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.advanced__card {
+  margin: 2rem 0;
+  padding: 1rem 0;
+  max-width: 400px;
+}
+.advanced__card--three {
+  margin-bottom: 0;
+}
+.advanced__main-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 3rem 0;
+  text-align: center;
+}
+.advanced__heading-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+
 @media (min-width: 576px) {
   .section-heading-text {
     font-size: 2.4rem;
@@ -323,6 +363,9 @@ body {
     max-width: 600px;
     margin: 0 auto;
   }
+  .advanced__main-text {
+    font-size: 2.2rem;
+  }
 }
 @media (min-width: 768px) {
   .section-heading-text {
@@ -338,6 +381,9 @@ body {
   .hero__below-logo-img {
     height: 12rem;
     width: 12rem;
+  }
+  .advanced__main-text {
+    font-size: 2.4rem;
   }
 }
 @media (min-width: 992px) {
@@ -471,6 +517,29 @@ body {
   .info__card {
     margin: 30px;
   }
+  .advanced__card {
+    max-width: 29rem;
+    margin: 20px;
+  }
+  .advanced__card--one {
+    margin-left: 0;
+  }
+  .advanced__card--three {
+    margin-right: 0;
+  }
+  .advanced__first-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .advanced__second-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .advanced__main-text {
+    font-size: 2.4rem;
+  }
 }
 @media (min-width: 1200px) {
   .section-heading-text {
@@ -486,5 +555,11 @@ body {
   }
   .hero__text {
     font-size: 3.2rem;
+  }
+  .advanced__card {
+    max-width: 36rem;
+  }
+  .advanced__main-text {
+    font-size: 2.6rem;
   }
 }/*# sourceMappingURL=main.css.map */
