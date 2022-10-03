@@ -12,6 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
     <link rel="stylesheet" href="./css/main.css">
     <script src="https://kit.fontawesome.com/7726142a02.js" crossorigin="anonymous"></script>
 </head>
@@ -284,14 +287,16 @@
                         <div class="advanced__card advanced__card--two">
                             <img class="advanced__icon" src="./img/icon/filled.png" alt="icon">
                             <p class="advanced__heading-text">Cloud-based log archival</p>
-                            <p class="advanced__info-text">Send selected logs to Azure Blob, an S3 Bucket or Hoogle Cloud storage for long-term retention in raw format</p>
+                            <p class="advanced__info-text">Send selected logs to Azure Blob, an S3 Bucket or Hoogle
+                                Cloud storage for long-term retention in raw format</p>
                         </div>
 
 
                         <div class="advanced__card advanced__card--three">
                             <img class="advanced__icon" src="./img/icon/cycle filled.png" alt="icon">
                             <p class="advanced__heading-text">Lifecycle management</p>
-                            <p class="advanced__info-text">Manage the lifecycle of the logs you store in the cloud directly from our console</p>
+                            <p class="advanced__info-text">Manage the lifecycle of the logs you store in the cloud
+                                directly from our console</p>
                         </div>
                     </div>
 
@@ -300,14 +305,16 @@
                         <div class="advanced__card advanced__card--four">
                             <img class="advanced__icon" src="./img/icon/robot.png" alt="icon">
                             <p class="advanced__heading-text">With or without agents</p>
-                            <p class="advanced__info-text">Use lightweight open-source agents (i.e. Elasticsearch or Fluentd) or send logs without installing any agents via Syslog.</p>
+                            <p class="advanced__info-text">Use lightweight open-source agents (i.e. Elasticsearch or
+                                Fluentd) or send logs without installing any agents via Syslog.</p>
                         </div>
 
 
                         <div class="advanced__card advanced__card--five">
                             <img class="advanced__icon" src="./img/icon/integration filled.png" alt="icon">
                             <p class="advanced__heading-text">Easy integration with Bi tools</p>
-                            <p class="advanced__info-text">Connect to a plethora of Bi tools from provided analytics engiens</p>
+                            <p class="advanced__info-text">Connect to a plethora of Bi tools from provided analytics
+                                engiens</p>
                         </div>
                     </div>
 
@@ -315,6 +322,106 @@
                 </div>
             </div>
         </section>
+        <section class="carousel">
+            <div class="carousel__body wrapper">
+                <div class="carousel__heading">
+                    <p class="section-text">customer testimonials</p>
+                    <h2 class="section-heading-text">Trusted by</h2>
+                </div>
+
+
+                <div class="carousel__boxes">
+                    <div class="carousel__box CARD">
+                        <div class="carousel__box-photo IMG">
+                            <img class="carousel__box-head" src="./img/People/Anna.jpg" alt="Anna Kowalska">
+                            <img class="carousel__box-icon" src="./img/quote.png" alt="icon '' ">
+                        </div>
+                        <div class="carousel__box-body CARD-BODY">
+                            <p class="carousel__box-text">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae similique quia commodi, perspiciatis est nam itaque corporis distinctio ab ex.
+                            </p>
+                            <div class="carousel__box-line"></div>
+                            <p class="carousel__box-name">Anna Kowalska</p>
+                            <p class="carousel__box-profession">Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="carousel__box">
+                        <div class="carousel__box-photo">
+                            <img class="carousel__box-head" src="./img/People/Marta.jpg" alt="Marta Wiśniewska">
+                            <img class="carousel__box-icon" src="./img/quote.png" alt="icon '' ">
+                        </div>
+                        <div class="carousel__box-body">
+                            <p class="carousel__box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Sequi neque minus rem ullam provident sed possimus voluptatibus repudiandae voluptatem
+                                nobis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, quam? Lorem ipsum
+                                dolor, sit amet consectetur adipisicing elit. Officiis, ducimus?</p>
+                            <div class="carousel__box-line"></div>
+                            <p class="carousel__box-name">Marta Wiśniewska</p>
+                            <p class="carousel__box-profession">Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="carousel__box">
+                        <div class="carousel__box-photo">
+                            <img class="carousel__box-head" src="./img/People/Artur.jpg" alt="Artur Nowak">
+                            <img class="carousel__box-icon" src="./img/quote.png" alt="icon '' ">
+                        </div>
+                        <div class="carousel__box-body">
+                            <p class="carousel__box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Sequi neque minus rem ullam provident sed possimus voluptatibus repudiandae voluptatem
+                                nobis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, quam? Lorem ipsum
+                                dolor, sit amet consectetur adipisicing elit. Officiis, ducimus?</p>
+                            <div class="carousel__box-line"></div>
+                            <p class="carousel__box-name">Artur Nowak</p>
+                            <p class="carousel__box-profession">Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="carousel__box">
+                        <div class="carousel__box-photo">
+                            <img class="carousel__box-head" src="./img/People/Marek.jpg" alt="Marek Ziółkowski">
+                            <img class="carousel__box-icon" src="./img/quote.png" alt="icon '' ">
+                        </div>
+                        <div class="carousel__box-body">
+                            <p class="carousel__box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Sequi neque minus rem ullam provident sed possimus voluptatibus repudiandae voluptatem
+                                nobis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, quam? Lorem ipsum
+                                dolor, sit amet consectetur adipisicing elit. Officiis, ducimus? Lorem ipsum dolor sit
+                                amet
+                                consectetur adipisicing elit. Provident ab quidem mollitia quibusdam nisi magni, eius
+                                impedit perferendis. Voluptatum, delectus.</p>
+                            <div class="carousel__box-line"></div>
+                            <p class="carousel__box-name">Marek Ziółkowski</p>
+                            <p class="carousel__box-profession">Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="carousel__box">
+                        <div class="carousel__box-photo">
+                            <img class="carousel__box-head" src="./img/People/Kasia.jpg" alt="Kasia Podolska">
+                            <img class="carousel__box-icon" src="./img/quote.png" alt="icon '' ">
+                        </div>
+                        <div class="carousel__box-body">
+                            <p class="carousel__box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Sequi neque minus rem ullam provident sed possimus voluptatibus repudiandae voluptatem
+                                nobis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, quam? Lorem ipsum
+                                dolor, sit amet consectetur adipisicing elit. Officiis, ducimus?</p>
+                            <div class="carousel__box-line"></div>
+                            <p class="carousel__box-name">Anna Podolska</p>
+                            <p class="carousel__box-profession">Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
 
 
 
@@ -332,9 +439,11 @@
 
 
 
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/main.js"></script>
 
-
-    <link rel="stylesheet" href="./js/main.js">
-</body>
 
 </html>

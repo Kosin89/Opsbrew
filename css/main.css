@@ -302,6 +302,7 @@ body {
 }
 
 .advanced {
+  display: none;
   padding: 4rem 2rem;
   background-color: #f2f2f2;
 }
@@ -336,6 +337,70 @@ body {
   font-size: 1.8rem;
   font-weight: bold;
   padding: 1rem 0;
+}
+
+.carousel {
+  background-color: #0F4ECA;
+}
+.carousel .section-text,
+.carousel .section-heading-text {
+  color: #ffffff;
+}
+.carousel__box-photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5rem;
+}
+.carousel__box-head {
+  position: absolute;
+  border-radius: 5rem;
+  top: 0;
+  width: 98px;
+  height: 98px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.carousel__box-icon {
+  position: absolute;
+  right: 20%;
+}
+.carousel__body {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.carousel__boxes {
+  margin: 4rem 0 2rem 0;
+  background-color: yellow;
+}
+.carousel__box {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 3rem 2rem;
+  max-width: 28rem;
+  height: 50rem;
+  margin: 0 auto;
+}
+.carousel__box-line {
+  margin: 0 auto;
+  height: 0.3rem;
+  width: 5rem;
+  background-color: #f3005b;
+}
+.carousel__box-name {
+  font-size: 1.8rem;
+  color: #0F4ECA;
+  padding: 1rem 0;
+}
+.carousel__box-profession {
+  font-size: 1.4rem;
+}
+.carousel__box-text {
+  padding: 3rem 0 4rem 0;
 }
 
 @media (min-width: 576px) {
