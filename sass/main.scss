@@ -354,6 +354,29 @@ body {
 		color: #ffffff;
 	}
 
+	&__body {
+		padding: 4rem 2rem;
+		text-align: center;
+	}
+
+	&__boxes {
+		display: flex;
+		margin: 4rem 0 2rem 0;
+		flex-wrap: wrap;
+		justify-content: center;
+		
+	}
+
+	&__box {
+		background-color: #fff;
+		border-radius: 10px;
+		padding: 3rem 2rem;
+		width: 28rem;
+		margin: 2rem;
+		display: flex;
+		flex-direction: column;			
+	}
+
 	&__box-photo {
 		display: flex;
 		position: relative;		
@@ -376,27 +399,15 @@ body {
 		right: 20%;
 	}
 
-	&__body {
-		padding: 4rem 2rem;
-		text-align: center;
+	&__box-body {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
 	}
 
-	&__boxes {
-		margin: 4rem 0 2rem 0;
-		background-color: yellow;
-	}
-
-	&__box {
-		background-color: #fff;
-		border-radius: 10px;
-		padding: 3rem 2rem;
-		max-width: 28rem;
-		height: 50rem;
-		margin: 0 auto;
-		
-	}
-
-	
+	&__box-text {
+		padding: 3rem 0 4rem 0;
+	}	
 
 	&__box-line {
 		margin: 0 auto;
@@ -415,9 +426,6 @@ body {
 		font-size: 1.4rem;
 	}
 
-	&__box-text {
-		padding: 3rem 0 4rem 0;
-	}
 }
 // MEDIA
 
