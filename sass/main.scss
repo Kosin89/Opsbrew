@@ -1,6 +1,5 @@
 @use "./colors" as *;
-@use "./components" as *;
-@use "./min" as *;
+
 
 *,
 *::after,
@@ -21,6 +20,13 @@ body {
 	font-size: 1.6rem;
 	// font-family: "Poppins", sans-serif;
 }
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
 .section-text {
 	text-transform: uppercase;
 	color: $blue;
@@ -50,7 +56,7 @@ body {
 	}
 
 	&__logo {
-		background-image: url(../img/opsbrewX.png);
+		background-image: url(../img/logo/opsbrewX.png);
 		height: 4rem;
 		width: 15rem;
 		background-size: 100%;
@@ -82,7 +88,7 @@ body {
 		color: $white;
 		padding: 1rem 3.5rem;
 		margin-left: -0.4rem;
-		margin-right: 2rem;
+		margin-right: 1rem;
 		transition: background-color 0.3s;
 		border-radius: 1rem;
 
@@ -111,7 +117,6 @@ body {
 
 .hero {
 	background-color: #f6f7fc;
-	display: none;
 
 	&__body {
 		max-width: 50rem;
@@ -204,7 +209,6 @@ body {
 }
 
 .key {
-	display: none;
 	padding-bottom: 5rem;
 
 	&__heading {
@@ -236,6 +240,7 @@ body {
 
 	&__info {
 		padding: 2rem 0;
+		line-height: 150%;
 	}
 
 	&__img {
@@ -245,7 +250,6 @@ body {
 }
 
 .info {
-	display: none;
 	background-color: #f3f5fb;
 	padding-bottom: 5rem;
 
@@ -257,6 +261,7 @@ body {
 	&__text {
 		margin: 0 auto;
 		max-width: 65rem;
+		line-height: 150%;
 	}
 
 	&__cards {
@@ -311,7 +316,6 @@ body {
 }
 
 .advanced {
-	display: none;
 	padding: 4rem 2rem;
 	background-color: #f2f2f2;
 
@@ -344,18 +348,21 @@ body {
 		font-weight: bold;
 		padding: 1rem 0;
 	}
+
+	&__info-text {
+		line-height: 150%;
+	}
 }
 
 .slider {
-	
 	position: relative;
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: $blue;
-	padding: 5rem 0;
-	
+	padding-bottom: 3rem;
+
 	.section-text,
 	.section-heading-text {
 		color: #ffffff;
@@ -376,7 +383,7 @@ body {
 		background-position: center;
 		background-size: cover;
 		width: 300px;
-		background-color: rgb(223, 221, 221);		
+		background-color: rgb(223, 221, 221);
 		filter: blur(4px);
 		border-radius: 10px;
 	}
@@ -398,7 +405,7 @@ body {
 		position: absolute;
 		top: 20px;
 		right: 30px;
-		opacity: 0.6;		
+		opacity: 0.6;
 	}
 
 	&__opinion {
@@ -445,7 +452,82 @@ body {
 	}
 }
 
+.footer {
+	background-color: #ffffff;
+	padding: 0 2rem;
 
+	&__logo {
+		text-align: center;
+		padding: 2rem 0;
+	}
+
+	&__logo-text {
+		color: rgb(132, 130, 130);
+		padding: 0.5rem 0;
+		font-size: 1.4rem;
+	}
+
+	&__links {
+		display: flex;
+		justify-content: center;
+		padding: 0 0 3rem 0;
+
+		a {
+			transition: color 0.3s;
+		}
+
+		a:hover {
+			color: $blue;
+		}
+	}
+
+	&__dot {
+		height: 0.4rem;
+		width: 0.4rem;
+		background-color: black;
+		border-radius: 5rem;
+		font-size: 1.4rem;
+		margin: auto 0.5rem;
+	}
+
+	&__link {
+		text-decoration: none;
+		color: black;
+		font-size: 1.4rem;
+	}
+
+	&__create {
+		text-align: center;
+		font-size: 1rem;
+
+		&--person {
+			padding: 0.5rem 0 3rem 0;
+		}
+
+		a {
+			text-decoration: none;
+			color: black;
+			transition: color 0.3s;
+		}
+
+		a:hover {
+			color: $blue;
+		}
+	}
+}
+
+.error {
+	height: 80vh;
+	display: flex;
+	align-items: center;	
+
+	&__photo {
+		display: flex;
+		flex-direction: column;
+		align-items: center;		
+	}
+	
+}
 
 // MEDIA
 
@@ -487,6 +569,12 @@ body {
 	.advanced {
 		&__main-text {
 			font-size: 2.2rem;
+		}
+	}
+
+	.footer {
+		&__create {
+			font-size: 1.2rem;
 		}
 	}
 }
@@ -552,6 +640,10 @@ body {
 			max-width: none;
 			padding-top: 0;
 			margin: auto;
+		}
+
+		&__btns {
+			margin-left: 1rem;
 		}
 
 		&__img {
@@ -669,6 +761,31 @@ body {
 
 		&__main-text {
 			font-size: 2.4rem;
+		}
+	}
+
+	.footer {
+		padding: 0;
+
+		&__body {
+			display: flex;
+			padding: 2rem 1rem;
+			justify-content: space-between;
+		}
+
+		&__logo {
+			display: flex;
+			padding: 0;
+		}
+
+		&__links {
+			align-items: center;
+			padding: 0 1rem 0 0;
+		}
+
+		&__logo-text {
+			padding: 0 1rem;
+			margin: auto 0;
 		}
 	}
 }

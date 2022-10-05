@@ -1,9 +1,3 @@
-.wrapper {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1200px;
-}
-
 *,
 *::after,
 *::before {
@@ -22,6 +16,12 @@ body {
   background-color: #f2f2f2;
   font-family: "Lato", sans-serif;
   font-size: 1.6rem;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .section-text {
@@ -61,7 +61,7 @@ body {
           justify-content: space-between;
 }
 .nav__logo {
-  background-image: url(../img/opsbrewX.png);
+  background-image: url(../img/logo/opsbrewX.png);
   height: 4rem;
   width: 15rem;
   background-size: 100%;
@@ -89,7 +89,7 @@ body {
   color: white;
   padding: 1rem 3.5rem;
   margin-left: -0.4rem;
-  margin-right: 2rem;
+  margin-right: 1rem;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
   border-radius: 1rem;
@@ -115,7 +115,6 @@ body {
 
 .hero {
   background-color: #f6f7fc;
-  display: none;
 }
 .hero__body {
   max-width: 50rem;
@@ -202,7 +201,6 @@ body {
 }
 
 .key {
-  display: none;
   padding-bottom: 5rem;
 }
 .key__heading {
@@ -239,6 +237,7 @@ body {
 }
 .key__info {
   padding: 2rem 0;
+  line-height: 150%;
 }
 .key__img {
   text-align: center;
@@ -246,7 +245,6 @@ body {
 }
 
 .info {
-  display: none;
   background-color: #f3f5fb;
   padding-bottom: 5rem;
 }
@@ -257,6 +255,7 @@ body {
 .info__text {
   margin: 0 auto;
   max-width: 65rem;
+  line-height: 150%;
 }
 .info__cards {
   padding: 2rem 3rem;
@@ -302,7 +301,6 @@ body {
 }
 
 .advanced {
-  display: none;
   padding: 4rem 2rem;
   background-color: #f2f2f2;
 }
@@ -338,6 +336,9 @@ body {
   font-weight: bold;
   padding: 1rem 0;
 }
+.advanced__info-text {
+  line-height: 150%;
+}
 
 .slider {
   position: relative;
@@ -352,7 +353,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-color: #0F4ECA;
-  padding: 5rem 0;
+  padding-bottom: 3rem;
 }
 .slider .section-text,
 .slider .section-heading-text {
@@ -437,6 +438,87 @@ body {
   color: rgb(132, 130, 130);
 }
 
+.footer {
+  background-color: #ffffff;
+  padding: 0 2rem;
+}
+.footer__logo {
+  text-align: center;
+  padding: 2rem 0;
+}
+.footer__logo-text {
+  color: rgb(132, 130, 130);
+  padding: 0.5rem 0;
+  font-size: 1.4rem;
+}
+.footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 0 3rem 0;
+}
+.footer__links a {
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.footer__links a:hover {
+  color: #0F4ECA;
+}
+.footer__dot {
+  height: 0.4rem;
+  width: 0.4rem;
+  background-color: black;
+  border-radius: 5rem;
+  font-size: 1.4rem;
+  margin: auto 0.5rem;
+}
+.footer__link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.4rem;
+}
+.footer__create {
+  text-align: center;
+  font-size: 1rem;
+}
+.footer__create--person {
+  padding: 0.5rem 0 3rem 0;
+}
+.footer__create a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.footer__create a:hover {
+  color: #0F4ECA;
+}
+
+.error {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.error__photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 @media (min-width: 576px) {
   .section-heading-text {
     font-size: 2.4rem;
@@ -464,6 +546,9 @@ body {
   }
   .advanced__main-text {
     font-size: 2.2rem;
+  }
+  .footer__create {
+    font-size: 1.2rem;
   }
 }
 @media (min-width: 768px) {
@@ -517,6 +602,9 @@ body {
     max-width: none;
     padding-top: 0;
     margin: auto;
+  }
+  .hero__btns {
+    margin-left: 1rem;
   }
   .hero__img {
     background-position: center;
@@ -638,6 +726,34 @@ body {
   }
   .advanced__main-text {
     font-size: 2.4rem;
+  }
+  .footer {
+    padding: 0;
+  }
+  .footer__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 2rem 1rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+  }
+  .footer__links {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 1rem 0 0;
+  }
+  .footer__logo-text {
+    padding: 0 1rem;
+    margin: auto 0;
   }
 }
 @media (min-width: 1200px) {
